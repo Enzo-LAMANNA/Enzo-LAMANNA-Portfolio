@@ -171,6 +171,7 @@ header h1 u {
 #socialnetworks a:hover {
     background-color: #0056b3; 
     transform: translateY(-3px);
+}
 
 #maPhotoProfil {
     width: 250px; 
@@ -725,5 +726,6 @@ footer p {
     }
 
 }
+
 
 
