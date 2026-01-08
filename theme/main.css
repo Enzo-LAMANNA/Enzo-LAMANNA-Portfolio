@@ -144,13 +144,25 @@ header h1 u {
     max-width: 85%;
 }
 
+/* Le conteneur parent pour aligner les icônes */
+#socialnetworks {
+    display: flex;       /* Aligne les enfants sur une ligne */
+    justify-content: flex-start; /* Aligne à gauche */
+    gap: 15px;           /* Espace entre les deux icônes */
+    margin-top: 20px;    /* Espace au-dessus des icônes */
+}
+
+/* Le style des icônes individuelles */
 #socialnetworks a {
     color: var(--color-text-light);
     font-size: 1.5rem; 
     text-decoration: none;
-    margin-right: 15px;
     background-color: var(--color-primary); 
-    padding: 10px 15px;
+    width: 50px;         /* Largeur fixe pour faire un rond parfait */
+    height: 50px;        /* Hauteur fixe */
+    display: flex;       /* Pour centrer l'icône dans le rond */
+    justify-content: center;
+    align-items: center;
     border-radius: 50%; 
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -158,8 +170,7 @@ header h1 u {
 
 #socialnetworks a:hover {
     background-color: #0056b3; 
-    transform: translateY(-3px); 
-}
+    transform: translateY(-3px);
 
 #maPhotoProfil {
     width: 250px; 
@@ -714,4 +725,5 @@ footer p {
     }
 
 }
+
 
